@@ -41,17 +41,17 @@ O objetivo é aplicar conceitos de autenticação, autorização, CRUD e integra
     - Flet instalado
     - SQLite instalado
 
-- Passo a passo
+- Passo a passo:
     - Clonar o repositório: git clone https://github.com/Raissa-Dev/App-Wayne.git
     - Entrar na pasta: cd App-Wayne
     - Instalar dependências: pip install fastapi uvicorn sqlalchemy aiosqlite
     - Rodar o projeto: python main.py
 
-📷 Prints do sistema
+## 📷 Prints do sistema
 
-📌 Tela de Login
+### 📌 Tela de Login
 ![Tela de Login](IMAGENS/paginalogin.png)
 
-📌 Menu Principal
+### 📌 Menu Principal
 ![Menu Principal](IMAGENS/paginamenu.png)
 
