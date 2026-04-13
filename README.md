@@ -1,6 +1,7 @@
-🦇 App Wayne
+# 🦇 App Wayne
 
-📌 Descrição
+## 📌 Descrição
+
 O App Wayne é uma aplicação full stack desenvolvida como projeto acadêmico, inspirada nas Indústrias Wayne.
 O sistema simula uma plataforma corporativa com foco em:
 
@@ -10,13 +11,14 @@ O sistema simula uma plataforma corporativa com foco em:
 
 O objetivo é aplicar conceitos de autenticação, autorização, CRUD e integração frontend + backend em um cenário realista.
 
-🚀 Tecnologias
-Python
-Backend: FastAPI
-Frontend: Flet
-SQLite
+## 🚀 Tecnologias
 
-🔐 Funcionalidades
+- Python
+- Backend: FastAPI
+- Frontend: Flet
+- SQLite
+
+## 🔐 Funcionalidades
 
 👤 Sistema de Usuários
 - Login e autenticação
@@ -33,24 +35,17 @@ SQLite
 - Indicadores de recursos
 - Painel administrativo
 
-▶️ Como rodar o projeto
-Pré-requisitos:
-Python instalado
-Flet instalado
-SQLite instalado
+## ▶️ Como rodar o projeto
+- Pré-requisitos:
+    - Python instalado
+    - Flet instalado
+    - SQLite instalado
 
-Passo a passo
-# clonar o repositório
-git clone https://github.com/Raissa-Dev/App-Wayne.git
-
-# entrar na pasta
-cd App-Wayne
-
-# instalar dependências
-pip install fastapi uvicorn sqlalchemy aiosqlite
-
-# rodar o projeto
-python main.py
+- Passo a passo
+    - Clonar o repositório: git clone https://github.com/Raissa-Dev/App-Wayne.git
+    - Entrar na pasta: cd App-Wayne
+    - Instalar dependências: pip install fastapi uvicorn sqlalchemy aiosqlite
+    - Rodar o projeto: python main.py
 
 📷 Prints do sistema
 
