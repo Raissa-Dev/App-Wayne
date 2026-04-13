@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\MATERIAL CURSO DEV FULL STACK\PROJETO_FINAL\PROJETO_FINAL\venv
+set VIRTUAL_ENV=D:\Pastas GitHub\App Wayne\App-Wayne\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

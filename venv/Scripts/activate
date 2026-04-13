@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\MATERIAL CURSO DEV FULL STACK\PROJETO_FINAL\PROJETO_FINAL\venv"
+VIRTUAL_ENV="D:\Pastas GitHub\App Wayne\App-Wayne\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
