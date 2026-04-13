@@ -1,20 +1,62 @@
-# App-Wayne
-Aplicativo Indústrias Wayne. 
-As Indústrias Wayne, uma empresa renomada e inovadora liderada pelo lendário Bruce Wayne (também conhecido como Batman), está buscando soluções tecnológicas para otimizar seus processos internos e melhorar a segurança de Gotham City. Como parte de seu projeto final do curso de programação full stack, você irá desenvolver uma aplicação web full stack que atenda às necessidades específicas das Indústrias Wayne. 
-Descrição do Projeto: Sua missão é criar uma plataforma que aborde os requisitos que são abordados a seguir.
+🦇 App Wayne
 
-# Sistema de Gerenciamento de Segurança:
-- Desenvolva um sistema de controle de acesso que permita apenas usuários autorizados a acessar áreas restritas das instalações das Indústrias Wayne.
-- Implemente autenticação e autorização para diferentes tipos de usuários, como funcionários, gerentes e administradores de segurança.
+📌 Descrição
+O App Wayne é uma aplicação full stack desenvolvida como projeto acadêmico, inspirada nas Indústrias Wayne.
+O sistema simula uma plataforma corporativa com foco em:
 
-# Gestão de Recursos:
-- Desenvolva uma interface para gerenciar recursos internos, como inventário de equipamentos, veículos e dispositivos de segurança.
-- Permita que os administradores possam adicionar, remover e atualizar informações sobre esses recursos de forma eficiente.
+- Controle de acesso e segurança interna
+- Gestão de recursos e inventário
+- Dashboard de monitoramento de dados operacionais
 
-# Dashboard de Visualização:
-- Crie um painel de controle visualmente atraente que exiba dados relevantes sobre segurança, recursos e atividades dentro das Indústrias Wayne.
+O objetivo é aplicar conceitos de autenticação, autorização, CRUD e integração frontend + backend em um cenário realista.
 
-# Entrega: 
-- Apresente um protótipo funcional da aplicação, incluindo código fonte e documentação detalhada.
-- Certifique-se de demonstrar a integração eficaz entre o frontend e o backend, bem como a implementação dos requisitos mencionados acima.
-- Solte sua criatividade!
+🚀 Tecnologias
+Python
+Backend: FastAPI
+Frontend: Flet
+SQLite
+
+🔐 Funcionalidades
+
+👤 Sistema de Usuários
+- Login e autenticação
+- Controle de acesso por tipo de usuário (funcionário, gerente, admin)
+- Autorização para áreas restritas
+
+📦 Gestão de Recursos
+- Cadastro de equipamentos, veículos e dispositivos
+- Edição e exclusão de itens
+- Organização de inventário interno
+
+📊 Dashboard
+- Visualização de dados de segurança
+- Indicadores de recursos
+- Painel administrativo
+
+▶️ Como rodar o projeto
+Pré-requisitos:
+Python instalado
+Flet instalado
+SQLite instalado
+
+Passo a passo
+# clonar o repositório
+git clone https://github.com/Raissa-Dev/App-Wayne.git
+
+# entrar na pasta
+cd App-Wayne
+
+# instalar dependências
+pip install fastapi uvicorn sqlalchemy aiosqlite
+
+# rodar o projeto
+python main.py
+
+📷 Prints do sistema
+
+📌 Tela de Login
+![Tela de Login](IMAGENS/paginalogin.png)
+
+📌 Menu Principal
+![Menu Principal](IMAGENS/paginamenu.png)
+
