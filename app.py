@@ -62,66 +62,71 @@ def exibir_menu(page, usuario):
     page.padding = 0
     page.scroll = ft.ScrollMode.AUTO
 
-    img = ft.Image(src="IMAGENS/image01.png", width=700, height=400)
+    # Fundo da página
+    background = ft.Container(
+        width="100%",
+        height="100%",
+        content=ft.Image(
+            src="IMAGENS/fundo1.png",   # coloque uma imagem de fundo aqui
+            fit=ft.ImageFit.COVER,
+            repeat=ft.ImageRepeat.NO_REPEAT,
+        ),
+        alignment=ft.alignment.top_left,
+        expand=True,
+    )
 
-    # Exibir o texto solicitando ao usuário escolher a área
+    # Conteúdo principal
+    img = ft.Image(src="IMAGENS/image01.png", width=700, height=400)
     texto_instrucoes = ft.Text("ESCOLHA A ÁREA QUE DESEJA ACESSAR:", size=20, weight="bold", color="white")
 
-    # Menu com as opções
     row = ft.Row(
         [
             ft.Container(
                 content=ft.Image(src="IMAGENS/recursos.png"),
-                margin=2,
-                padding=2,
+                width=250, height=200,
                 alignment=ft.alignment.center,
-                width=250,
-                height=200,
                 border_radius=10,
                 on_click=lambda e: verificar_acesso(page, usuario, "RECURSOS"),
             ),
             ft.Container(
-                content=ft.Image(src="IMAGENS/segurança.png"),
-                margin=2,
-                padding=2,
+                content=ft.Image(src="IMAGENS/seguranca.png"),
+                width=250, height=200,
                 alignment=ft.alignment.center,
-                width=250,
-                height=200,
                 border_radius=10,
                 on_click=lambda e: verificar_acesso(page, usuario, "SEGURANÇA"),
             ),
             ft.Container(
                 content=ft.Image(src="IMAGENS/atividades.png"),
-                margin=2,
-                padding=2,
+                width=250, height=200,
                 alignment=ft.alignment.center,
-                width=250,
-                height=200,
                 border_radius=10,
                 on_click=lambda e: verificar_acesso(page, usuario, "ATIVIDADES"),
             ),
         ],
-        alignment=ft.MainAxisAlignment.CENTER  # Centralizar horizontalmente os botões
+        alignment=ft.MainAxisAlignment.CENTER
     )
 
-    botao_sair = ft.OutlinedButton("Sair", on_click=lambda e: sair_e_abrir_login(page))  # Voltar à tela de login
-    
-    # Organizar todos os elementos em uma única coluna
-    layout = ft.Column(
+    botao_sair = ft.OutlinedButton("Sair", on_click=lambda e: sair_e_abrir_login(page))
+
+    content = ft.Column(
         [
-            img,  # Imagem no topo
-            texto_instrucoes,  # Texto de instruções
-            row,  # Linha com os botões
-            botao_sair  # Botão Sair no final
+            img,
+            texto_instrucoes,
+            row,
+            botao_sair
         ],
-        alignment=ft.MainAxisAlignment.CENTER,  # Centralizar todos os itens verticalmente
-        horizontal_alignment=ft.CrossAxisAlignment.CENTER,  # Centralizar todos os itens horizontalmente
-        expand=True  # Expandir para ocupar a altura total da página
+        alignment=ft.MainAxisAlignment.CENTER,
+        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+        expand=True
     )
-    
-    # Limpar a página e adicionar o layout centralizado
+
+    # Usando Stack para sobrepor conteúdo ao fundo
+    layout = ft.Stack([background, content])
+
     page.clean()
     page.add(layout)
+    page.update()
+
 
     # Função para a ação do botão "Sair" (limpar a página de menu e voltar ao login)
 def sair_e_abrir_login(page):
